@@ -1,8 +1,18 @@
 
-
-
+.mockup {
+    height: 60vh;
+}
+.join {
+    margin-left: 810px;
+}
 li {
     list-style: none;
+}
+figure {
+    transition: 0.5s;
+}
+figure img:hover {
+    transform: scale(1.2);
 }
 
 a {
@@ -13,16 +23,17 @@ a {
 .navbar {
     min-height: 70px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 24px;
 }
-
+.navbar img {
+    padding-right: 20px;
+}
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
 }
 
 .nav-branding {
@@ -52,22 +63,6 @@ a {
     background-color: #372865;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width:767px) {
     .hamburger{
         display: block;
@@ -90,8 +85,12 @@ a {
         flex-direction: column;
         background-color: #372865;
         width: 100%;
-        text-align: center;
+        align-items: center;
         transition: 0.3s;
+        padding-left: 10px;
+     }
+     .join {
+        margin-left: 10px;
      }
 
      a {
@@ -104,5 +103,8 @@ a {
 
      .nav-menu.active {
         left: 0;
+     }
+     .navbar {
+        justify-content: space-between;
      }
 }
